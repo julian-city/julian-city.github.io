@@ -22,6 +22,10 @@ html, body {
     text-align: center;
 }
 
+.contact-background {
+    background-image: url('TOKYO.jpg');
+}
+
 .content {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 3rem;
@@ -57,4 +61,55 @@ h1 {
 
 .links a:hover {
     opacity: 0.7;
+}
+
+/* Contact Form Styles */
+.contact-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+form button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #f0f0f0;
 }
