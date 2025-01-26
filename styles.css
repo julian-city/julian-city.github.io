@@ -28,35 +28,39 @@ html, body {
 
 .content {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 .subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
     opacity: 0.9;
 }
 
 .links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .links a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-bottom: 1px solid white;
     transition: opacity 0.3s ease;
+    margin: 0 0.5rem;
 }
 
 .links a:hover {
@@ -70,10 +74,11 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
 }
 
 form {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 1); /* Fully opaque black */
     padding: 2rem;
     border-radius: 10px;
     width: 100%;
@@ -112,4 +117,29 @@ form button {
 
 form button:hover {
     background-color: #f0f0f0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links a {
+        margin: 0.5rem 0;
+    }
+
+    form {
+        padding: 1rem;
+        width: 95%;
+    }
 }
